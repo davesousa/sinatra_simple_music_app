@@ -1,0 +1,14 @@
+
+
+<% @tracks.each do |track| %>
+  <div class="track" id="track_container">
+    <h3><%= track.song_title %> <small>(by: <%= track.author %>)</small></h3>
+    <p>
+      <a href= "<%= track.url %>"> Click here to listen to this song.</a>
+    </p>
+    <br></br>
+  </div>
+<% end %>
+
+
+<a href="/new"><img id="new_button" src="http://www.clker.com/cliparts/t/i/k/5/P/4/add-button-md.png"></a>

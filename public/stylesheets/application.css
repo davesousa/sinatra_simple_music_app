@@ -1,0 +1,32 @@
+html {
+ background: url("http://www.thepaperwall.com/wallpapers/nature/big/big_f884343141158f70d45cbc94f0aaaf17ec206439.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+#track_container {
+  text-align: center;
+}
+
+#new_button {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 95%
+}
+
+label, p, h3, a, ul, strong {
+  color: white;
+}
+
+#form_container {
+  text-align: center;
+  padding-top: 200px
+}
+
+.label_align{
+  padding-left: 50px
+}

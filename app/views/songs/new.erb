@@ -1,0 +1,34 @@
+<!-- ERROR GEN -->
+<% if @tracks && @tracks.errors.any? %>
+  <div>
+    <strong>Some issues with your message, please fix them:</strong>
+    <ul>
+      <% @tracks.errors.full_messages.each do |tracks| %>
+        <li><%= tracks %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div id="form_container">
+  <form method="post" action="/new_track">
+    <div>
+      <label class="label_align">Artist:</label>
+      <input type="text" name="author" value="<%= @tracks && @tracks.author %>">
+    </div>
+    <br></br>
+    <div>
+      <label>Song Name:</label>
+      <input type="text" name="song_title" value="<%= @tracks && @tracks.song_title %>">
+    </div>
+    <br></br>
+    <div>
+      <label class="label_align">URL:</label>
+      <input type="text" name="url" value="<%= @tracks && @tracks.url %>">
+    </div>
+    <br></br>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
